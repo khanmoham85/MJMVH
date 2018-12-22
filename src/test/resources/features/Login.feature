@@ -5,8 +5,9 @@ Feature: Login feature
     Given OrangeHRM logo is displayed
 
   Scenario: Valid login
-    When I enter "admin" and "admin123"
-    And I click on login button
+    When I logged into OrangeHRM
+    And I enter "Admin" and "admin123"
+    And click on login
     Then I successfully logged in
 
   Scenario Outline: Invalid login

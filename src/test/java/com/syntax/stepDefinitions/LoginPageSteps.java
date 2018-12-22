@@ -10,6 +10,7 @@ import cucumber.api.java.en.When;
 
 public class LoginPageSteps {
 
+	
 	LoginPage login;
 
 	@Given("^OrangeHRM logo is displayed$")
@@ -20,7 +21,7 @@ public class LoginPageSteps {
 
 	@When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_enter_and(String value1, String value2) {
-		CommonMethods.enterValue(login.username, value1);
+		CommonMethods.enterValue(login.username,value1 );
 		CommonMethods.enterValue(login.password, value2);
 	}
 

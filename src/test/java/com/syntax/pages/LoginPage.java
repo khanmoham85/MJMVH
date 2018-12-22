@@ -26,4 +26,7 @@ public class LoginPage extends BaseClass{
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
+//	public static void login(String username,String password) {
+//		
+//	}
 }
